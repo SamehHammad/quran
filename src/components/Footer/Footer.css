@@ -1,0 +1,34 @@
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid green;
+    margin-top: 20vh;
+}
+.Footer-content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding: 20px
+}
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: green;
+    transition: .5s;
+}
+.fa:hover{
+    background-color: green;
+    color: #fff;
+}
+@media (max-width:500px) {
+    .Footer h1{
+        font-size: 25px;
+    }
+    .socil i{
+        font-size: 25;
+    }
+}

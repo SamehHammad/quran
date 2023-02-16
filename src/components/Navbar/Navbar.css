@@ -1,0 +1,93 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 70px;
+  height: 10vh;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+::placeholder {
+  color: #aa6161;
+}
+.Search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid green;
+  border-radius: 16px;
+  width: 20vw;
+}
+.Search input {
+  border: none;
+  outline: none;
+  width: 90%;
+  background-color: transparent;
+  font-size: 20px;
+  color: #aa6161;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.items a {
+  padding: 10px;
+  margin-right: 20px;
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.items a:hover {
+  background-color: green;
+  color: #fff;
+}
+.active {
+  border: 1px solid green;
+}
+.nav-light {
+  background-color: #F2F2F2;
+  color: black;
+  box-shadow: 1px 1px 20px #131111;
+  transition: all 2s ease;
+
+}
+.nav-dark {
+  background-color: #242526;
+  color: white;
+  box-shadow: 1px 1px 20px #aca9a9;
+  transition: all 2s ease;
+
+}
+@media (max-width: 700px) {
+  .Search {
+    width: 25%;
+  }
+  .Navbar {
+    padding: 50px 10px;
+  }
+  .items a{
+    margin-right: 0px;
+    font-size: 15px;
+    font-weight: 800;
+
+  }
+  ::placeholder{
+    font-size: 10px;
+    font-weight: 400;
+
+  }
+  .Search {
+    
+    padding: 10px 2px;
+    border: 1px solid green;
+    border-radius: 16px;
+    width: 20vw;
+  }
+}

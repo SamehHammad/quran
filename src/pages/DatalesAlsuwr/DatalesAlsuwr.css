@@ -1,0 +1,66 @@
+.DatalesAlsuwr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font-size: 40px;
+    text-align: end;
+}
+.dataDatalesAlsuwr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to top ,transparent,green);
+}
+.image{
+    width: 20vw;
+}
+.Surah{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    width: 100%;
+}
+.wordSurah{
+    text-align:justify;
+    font-size: 25px;
+}
+.saved{
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+.saveShow{
+    background-color: green;
+}
+.saved button{
+    border: 1px solid #3333;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+    margin-left:10px;
+    color: green;
+    cursor: pointer;
+}
+.saved button:hover{
+    background-color: green;
+    color: #fff;
+}
+@media (max-width:700px) {
+    .image{
+        width: 30vw;
+    }
+    .name{
+        font-size: 30px;
+    }
+}
+@media (max-width:430px) {
+    .image{
+        width: 35vw;
+    }
+    .name{
+        font-size: 25px;
+    }
+}

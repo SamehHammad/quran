@@ -1,0 +1,18 @@
+.NotFouand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.NotFouand h1{
+    font-size: 80px;
+}
+.NotFouand h3{
+    font-size: 40px;
+}

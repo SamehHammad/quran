@@ -1,0 +1,97 @@
+.AllAlsuwr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Alldata{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 30vw;
+    border: 1px solid green;
+}
+.dataAllAlsuwr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid green;
+    width: 100%;
+    transition: .5s;   
+}
+.bigAllAlsuwr{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dataAllAlsuwr:hover{
+    color: #fff;
+    background-color: green;
+}
+.dataAllAlsuwr:hover .title{
+    color: green;
+    background-color:#fff ;
+}
+.dataAllAlsuwr:hover a{
+    color: #fff;
+}
+.dataAllAlsuwr a{
+    color: #000;
+    text-decoration: none;
+}
+.dataAllAlsuwr h3{
+    margin: 10px 20px;
+}
+.title{
+    background-color: green;
+    padding: 15px;
+    width: 4vw;
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    color: #fff;
+}
+.datalistitle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+}
+@media (max-width:1100px) {
+    .Alldata{
+       width: 50vw;
+    }   
+}
+@media (max-width:800px) {
+    .Alldata{
+       width: 70vw;
+    }   
+    .title{
+        width: 7vw;
+    }
+}
+@media (max-width:510px) {
+    .Alldata{
+       width: 80vw;
+    }   
+    .datalistitle h3{
+        font-size: 16px;
+    }
+    .dataAllAlsuwr h3{
+        font-size: 20px;
+    }
+    .title{
+        width: 10vw;
+    }
+}
+@media (max-width:360px) {
+    .title{
+        width: 14vw;
+    }
+}

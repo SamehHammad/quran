@@ -1,0 +1,25 @@
+{
+  "short_name": "Quran",
+  "name": "Mohmed Mahmoud Fouad",
+  "icons": [
+    {
+      "src": "https://www.kindpng.com/picc/m/497-4977554_free-png-quran-png-images-transparent-.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://www.kindpng.com/picc/m/497-4977554_free-png-quran-png-images-transparent-.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://www.kindpng.com/picc/m/497-4977554_free-png-quran-png-images-transparent-.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
