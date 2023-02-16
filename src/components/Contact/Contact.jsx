@@ -11,7 +11,16 @@ const Contact = () => {
   const [massege, setMassege] = useState("");
   const handleValue = (targert) => {
     if (email.includes("@") && name) {
-        targert.onclick.arguments[0].preventDefault();      emailjs
+      Swal.fire(
+        "تم إستلام رسالتك بنجاح",
+        "Thanke You <b style=color:red;> " +
+          name +
+          " </b>for contacting me and I will reply to you as soon as possible Inashalla",
+
+        "success"
+      );
+      clearInputs();
+      emailjs
         .sendForm(
           "service_yyz7c43",
           "template_chzwj99",
@@ -26,15 +35,6 @@ const Contact = () => {
             console.log(error.text);
           }
         );
-      Swal.fire(
-        "تم إستلام رسالتك بنجاح",
-        "Thanke You <b style=color:red;> " +
-          name +
-          " </b>for contacting me and I will reply to you as soon as possible Inashalla",
-
-        "success"
-      );
-      clearInputs();
     } else {
       Swal.fire({
         icon: "error",
@@ -53,7 +53,7 @@ const Contact = () => {
     <div className="container contact">
       <div className="row">
         <div className="col-md-3">
-          <div className="contact-info">
+          <div className="contact-info" dir="rtl">
             <MdOutlineForwardToInbox
               style={{
                 width: "10rem",
@@ -67,12 +67,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-md-9">
-          <form
-            className="contact-form"
-            dir="rtl"
-            ref={form}
-            onSubmit={() => handleValue()}
-          >
+          <div className="contact-form" dir="rtl" ref={form}>
             <div className="form-group">
               <label className="control-label col-sm-2" for="fname">
                 إسمك:
@@ -121,12 +116,31 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <div className="col-sm-offset-2 col-sm-10">
-                <button type="submit" className="btn btn-default">
-                  إضغط للإرسال
-                </button>
+                <div className="mb-6  buttons">
+                  <button
+                    type="submit"
+                    className="
+            
+          "
+                    onClick={() => handleValue()}
+                  >
+                    إضغط للإرسال
+                  </button>
+                  {name || email || massege ? (
+                    <button
+                      type="submit"
+                      className=""
+                      onClick={() => clearInputs()}
+                    >
+                      إفراغ جميع الحقول
+                    </button>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

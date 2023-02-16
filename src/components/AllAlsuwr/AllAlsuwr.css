@@ -20,8 +20,13 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid green;
+    color: #a72828;
     width: 100%;
     transition: .5s;   
+}
+.dataAllAlsuwr h3{
+        color: #a72828;
+    
 }
 .bigAllAlsuwr{
     width: 90%;
