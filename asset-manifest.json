@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/quran/static/css/main.51fc4704.css",
+    "main.js": "/quran/static/js/main.5955a81c.js",
+    "static/js/496.d049960b.chunk.js": "/quran/static/js/496.d049960b.chunk.js",
+    "static/media/pattern.png": "/quran/static/media/pattern.069f39a197e0cba8a801.png",
+    "static/media/mosahf.jpg": "/quran/static/media/mosahf.07dd8f46cdcc52b28957.jpg",
+    "index.html": "/quran/index.html",
+    "main.51fc4704.css.map": "/quran/static/css/main.51fc4704.css.map",
+    "main.5955a81c.js.map": "/quran/static/js/main.5955a81c.js.map",
+    "496.d049960b.chunk.js.map": "/quran/static/js/496.d049960b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51fc4704.css",
+    "static/js/main.5955a81c.js"
+  ]
+}
